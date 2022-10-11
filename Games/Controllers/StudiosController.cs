@@ -1,4 +1,5 @@
-﻿using Games.Interfaces;
+﻿using Games.Domains;
+using Games.Interfaces;
 using Games.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,14 @@ namespace Games.Controllers
         public IActionResult List()
         {
             return Ok(StudioRepository.List());
+        }
+
+        [HttpPost]
+        public IActionResult Create(Studio newStudio)
+        {
+            StudioRepository.Create(newStudio);
+
+            return StatusCode(201);
         }
     }
 }
