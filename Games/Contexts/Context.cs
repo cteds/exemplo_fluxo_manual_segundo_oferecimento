@@ -13,7 +13,7 @@ namespace Games.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-38IN3GA\\SQLEXPRESS; Database=Games; user Id=sa; pwd=cteds2022;");
+            optionsBuilder.UseSqlServer("Server=labsoft.pcs.usp.br; Database=db_prof; user Id=prof; pwd=16nM10_okv;");
             base.OnConfiguring(optionsBuilder);
         }
 

@@ -20,7 +20,7 @@ namespace Games.Repositories
 
         public List<Studio> List()
         {
-            throw new NotImplementedException();
+            return ctx.Studios.ToList();
         }
     }
 }

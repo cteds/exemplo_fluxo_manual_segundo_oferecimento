@@ -15,5 +15,11 @@ namespace Games.Controllers
         {
             StudioRepository = new StudioRepository();
         }
+
+        [HttpGet]
+        public IActionResult List()
+        {
+            return Ok(StudioRepository.List());
+        }
     }
 }
