@@ -10,7 +10,8 @@ namespace Games.Repositories
 
         public void Create(Studio newStudio)
         {
-            throw new NotImplementedException();
+            ctx.Studios.Add(newStudio);
+            ctx.SaveChanges();
         }
 
         public void Delete(int idEstudio)
